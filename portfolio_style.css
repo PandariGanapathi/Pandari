@@ -1,0 +1,58 @@
+/* styles.css */
+
+body {
+    background-color: #ff9100;
+}
+.contact {
+    color: #000000;
+    position: absolute; /* Position relative to the nearest positioned ancestor (body) */
+    top: 30px; /* Adjust this value as needed */
+    left: 1080px; /* Adjust this value as needed */
+    font-size: 24px; /* Change font size as needed */
+    z-index: 3; /* Ensure it's on top of images and background */
+    max-width: 800px;
+    
+}
+.container {
+    max-width: 1920px; /* Set the maximum width */
+    margin: 0 auto; /* Center the container */
+    padding: 100px; /* Add some padding */
+}
+.responsive-image {
+    width: 18%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0px; /* Add margin above and below the images */
+    border: 2px solid #ccc; /* Optional: add a border */
+    border-radius: 8px; /* Optional: add rounded corners */
+}
+.logo {
+    position: absolute; /* Position relative to the nearest positioned ancestor (body) */
+    height: 10vh; /* Fixed height */
+    top: 5vh; /* Adjust top position if needed */
+    left: 2vw; /* Adjust left position if needed */
+    z-index: 2; /* Ensure images are on top of the background */
+    object-fit: absolute; /* Maintain aspect ratio of images if they are not exactly 1920x1080 */
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .responsive-image {
+        width: 15vw;
+        left: 10vw;
+        height: auto; /* Maintain aspect ratio */
+        border: 2px solid #ccc; /* Optional: add a border */
+        border-radius: 8px; /* Optional: add rounded corners */
+    }
+    .container {
+        top: 10vh;
+        padding: 16%; /* Add some padding */
+    }
+    .logo {
+        height: 4vh;
+        top: 5vh;
+        left: 8vw;
+    }
+    .contact {
+        left: 50vw; /* Responsive left position */
+    }
+}
